@@ -1,8 +1,3 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile/mark-dark.png">
-  <img src="profile/mark-light.png" alt="" width="72" height="72">
-</picture>
-
 # Trufill
 
 **Лучшая цена обмена криптовалюты — из всех площадок сразу.**
