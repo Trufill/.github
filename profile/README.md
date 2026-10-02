@@ -22,10 +22,12 @@
 </p>
 
 <p align="center">
-  <a href="https://docs.soliditylang.org/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/solidity.svg" height="26" alt="Solidity"></a>
-  <a href="https://www.typescriptlang.org/docs/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/typescript.svg" height="26" alt="TypeScript"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/javascript.svg" height="26" alt="JavaScript"></a>
-  <a href="https://doc.rust-lang.org/book/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/rust.svg" height="26" alt="Rust — native Solana"></a>
+  <a href="https://docs.soliditylang.org/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/solidity.svg" height="20" alt="Solidity 0.8.28"></a>
+  <a href="https://www.typescriptlang.org/docs/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/typescript.svg" height="20" alt="TypeScript 5.9.2"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/javascript.svg" height="20" alt="JavaScript · ESM"></a>
+  <a href="https://doc.rust-lang.org/book/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/rust.svg" height="20" alt="Rust · edition 2021"></a>
+  <a href="https://nodejs.org/docs/latest-v20.x/api/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/nodejs.svg" height="20" alt="Node.js ≥20"></a>
+  <a href="https://react.dev/reference/react"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/react.svg" height="20" alt="React 19.2.8"></a>
 </p>
 
 ---
