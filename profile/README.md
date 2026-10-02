@@ -1,40 +1,108 @@
-# Trufill
+<p align="center">
+  <a href="https://trufill.xyz">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/banner-dark.svg">
+      <img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/banner-light.svg" alt="Trufill — маршруты обмена, исполнение в вашем кошельке" width="1200">
+    </picture>
+  </a>
+</p>
 
-**Лучшая цена обмена криптовалюты — из всех площадок сразу.**
+<h1 align="center">Маршруты сравниваем мы. Обмен подписываете вы.</h1>
 
-Мы сравниваем маршруты обмена за секунду и отдаём тот, где вы получите больше.
-Средства при этом остаются в вашем кошельке: они уходят напрямую в сделку, минуя наши счета.
+<p align="center">
+  Trufill соединяет ликвидность DEX с вашим кошельком.<br>
+  Котировка, условия обмена и проверяемый результат — в одном процессе.
+</p>
 
-→ **[trufill.xyz](https://trufill.xyz)**
+<p align="center">
+  <a href="https://swap.trufill.xyz"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/buttons/swap.svg" height="38" alt="Открыть терминал"></a>
+  <a href="https://trufill.xyz"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/buttons/product.svg" height="38" alt="О продукте"></a>
+  <a href="https://github.com/Trufill/dex-aggregator#документация"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/buttons/docs.svg" height="38" alt="Документация для разработчиков"></a>
+  <a href="https://t.me/trufill"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/buttons/contact.svg" height="38" alt="Связаться в Telegram"></a>
+</p>
 
-## Что это, если коротко
+<p align="center">
+  <a href="https://docs.soliditylang.org/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/solidity.svg" height="26" alt="Solidity"></a>
+  <a href="https://www.typescriptlang.org/docs/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/typescript.svg" height="26" alt="TypeScript"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/javascript.svg" height="26" alt="JavaScript"></a>
+  <a href="https://doc.rust-lang.org/book/"><img src="https://raw.githubusercontent.com/Trufill/.github/main/profile/assets/languages/rust.svg" height="26" alt="Rust — native Solana"></a>
+</p>
 
-Не биржа, а поиск лучшей цены — категория та же, что у сервисов сравнения билетов.
-Обмен исполняется одной транзакцией: токены уходят в сделку и возвращаются пользователю,
-мы удерживаем только свою долю комиссии.
+---
 
-Главное свойство продукта — **показанная котировка равна фактически полученному**.
-Это не лозунг: расхождение измерено и равно нулю до последней неделимой единицы.
+## Автор
 
-## Как устроено
+<table>
+  <tr>
+    <td align="center" width="116">
+      <a href="https://github.com/artemmalanin979-create"><img src="https://avatars.githubusercontent.com/u/225334540?s=160&amp;v=4" width="80" height="80" alt="Артём Маланин"></a>
+    </td>
+    <td>
+      <strong>Артём Маланин</strong><br>
+      Основатель и разработчик Trufill<br>
+      <a href="https://github.com/artemmalanin979-create">GitHub</a> · <a href="https://www.linkedin.com/in/artem-malanin-3a9818420">LinkedIn</a> · <a href="https://x.com/ArtemMalaninDev">X</a> · <a href="https://t.me/trufill">Telegram</a>
+    </td>
+  </tr>
+</table>
 
-| | |
-|---|---|
-| **Некастодиальность** | у сервиса нет счетов, где лежали бы средства пользователя. Красть нечего даже при полном взломе инфраструктуры |
-| **Потолок комиссии** | зашит в контракт константой — поднять её не может никто, включая нас |
-| **Задержка на изменения** | смена параметров проходит через таймлок: заявка видна заранее |
-| **Мультичейн** | несколько сетей; недоступность одной не роняет остальные |
+## Что такое Trufill
 
-## Куда идём
+**Trufill — некастодиальный DEX-агрегатор.** Он сравнивает доступные маршруты обмена, готовит транзакцию и позволяет проверить результат по данным блокчейна. Средства остаются под контролем пользователя: обмен требует подписи в его кошельке.
 
-Одна платформа — две биржи. Децентрализованная часть работает уже сейчас и не требует
-доверия к нам. Собственная биржа со своим токеном добавит глубину и программу лояльности;
-она запускается вместе с юридическим лицом и лицензией, не раньше.
+Мы строим продукт вокруг понятных условий исполнения. До подписи пользователь видит маршрут и минимальный выход; контракт должен выполнить этот минимум или откатить обмен. Рыночный результат может отличаться от предварительной котировки.
 
-## Команда
+| Для пользователя | Для разработчика |
+| --- | --- |
+| **Терминал обмена** — выбрать рынок, получить котировку, проверить условия. | **API и quote engine** — маршруты, доступность источников и журнал котировок. |
+| **Собственный кошелёк** — проверить и подписать транзакцию. | **Контрактный роутер** — minimum output, deadline и управление параметрами. |
+| **Результат в цепи** — транзакция и полученные токены. | **Проверка исполнения** — связь quote с транзакцией, receipt и изменениями балансов. |
 
-Проект ведёт **[Артём Маланин](https://www.linkedin.com/in/artem-malanin-3a9818420)** — основатель и разработчик. Команда не анонимна: профиль открыт, историю разработки видно в репозиториях. Связь — Telegram [@trufill](https://t.me/trufill).
+[Открыть терминал](https://swap.trufill.xyz) · [Познакомиться с продуктом](https://trufill.xyz)
 
-## Статус
+## Где мы сейчас
 
-Открытый тестнет-артефакт. **Реальные средства не принимаются.**
+Состояние на **02.10.2026**. Доступность котировок и доступность обмена различаются.
+
+| Направление | Состояние |
+| --- | --- |
+| **Base** | Ограниченный mainnet-срез: WETH ↔ native USDC, один hop Uniswap V3, комиссия протокола 0 bps. [Реальный обмен в BaseScan](https://basescan.org/tx/0xc20cf7c51ead32ce7602fd33670c48d36287e37b8ab481972f50b5404f09ca8d). |
+| **Ethereum / Base / Arbitrum Sepolia** | Три активных тестнета для разработки и проверок. |
+| **Polygon / BNB Chain / Arbitrum** | Подготовленные EVM-направления; public swap закрыт, deployment ещё не выполнен. |
+| **Solana / Jupiter** | Живые котировки WSOL ↔ native USDC. Quote-only: подпись и отправка транзакций не реализованы. |
+| **Native Solana / Orca / Squads** | Отдельная реализация сохранена; deployment приостановлен бюджетным ограничением. |
+
+Внешний аудит Trufill не проводился. Работающий Base-срез не означает готовность всех сетей: каждое новое направление проходит отдельную техническую приёмку перед выпуском.
+
+## Экосистема и код
+
+| Репозиторий | Роль | Языки и стек |
+| --- | --- | --- |
+| [**dex-aggregator**](https://github.com/Trufill/dex-aggregator) | Основной DEX: EVM-контракты, gateway, quote engine, проверка исполнения и Jupiter quote-only. | **Solidity · TypeScript · JavaScript**; Foundry, Node.js, viem, Vitest. |
+| [**dex-aggregator-solana**](https://github.com/Trufill/dex-aggregator-solana) | Native Solana-путь с Orca и Squads; отдельная область разработки и выпуска. | **Rust · JavaScript**; Solana, Orca Whirlpools, Squads. |
+| [**terminal**](https://github.com/Trufill/terminal) | Пользовательский интерфейс котировок и обмена. | **JavaScript · React**. |
+| [**web**](https://github.com/Trufill/web) | Сайт продукта и общая визуальная идентичность. | Веб-интерфейс Trufill. |
+| [**.github**](https://github.com/Trufill/.github) | Этот публичный профиль организации. | Markdown · SVG. |
+
+Репозитории разработки сейчас **приватные**: ссылки на код требуют выданного доступа. Публичный профиль описывает продукт и его состояние; по интеграции, доступу или сотрудничеству [напишите в Telegram](https://t.me/trufill).
+
+## На чьей работе строим
+
+Trufill использует открытые библиотеки и протоколы; благодарим их авторов и сопровождающих.
+
+- [**OpenZeppelin**](https://github.com/OpenZeppelin/openzeppelin-contracts) — контрактные библиотеки EVM.
+- [**Uniswap**](https://github.com/Uniswap) — протоколы V3/V2 и основа изолированного дерева V2-пулов.
+- [**Jupiter**](https://github.com/jup-ag) — Solana quote API в основном DEX.
+- [**Orca**](https://github.com/orca-so/whirlpools) и [**Squads**](https://github.com/Squads-Protocol) — компоненты отдельного native Solana-пути.
+
+Лицензии определяются файлами и зависимостями каждого репозитория. Эти команды указаны как upstream, их участие в команде Trufill не заявляется.
+
+## На связи
+
+По вопросам продукта, интеграции и сотрудничества — [**@trufill в Telegram**](https://t.me/trufill).
+
+<p align="center">
+  <a href="https://trufill.xyz"><strong>trufill.xyz</strong></a> ·
+  <a href="https://swap.trufill.xyz">Терминал</a> ·
+  <a href="https://github.com/Trufill/dex-aggregator#документация">Документация</a> ·
+  <a href="https://t.me/trufill">Связаться</a>
+</p>

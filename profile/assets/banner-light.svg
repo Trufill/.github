@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="Trufill — DEX aggregation">
+  <title>Trufill — DEX aggregation</title>
+  <rect width="1200" height="300" rx="16" fill="#f1f6fc"/>
+  <defs><clipPath id="vessel"><rect x="62" y="83" width="78" height="100" rx="19"/></clipPath></defs>
+  <rect x="62" y="133" width="78" height="50" fill="#15273d" clip-path="url(#vessel)"/>
+  <g fill="none" stroke="#15273d" stroke-width="7"><rect x="62" y="83" width="78" height="100" rx="19"/><path d="M62 133h78"/></g>
+  <text x="172" y="163" fill="#15273d" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" letter-spacing="-3.5">Trufill</text>
+  <text x="64" y="237" fill="#536b84" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="4">DEX AGGREGATION</text>
+  <g fill="none" stroke="#c4d5e8" stroke-width="2"><path d="M708 83h64l42 67h105M708 150h211M708 217h64l42-67"/></g>
+  <path d="M708 150h211" fill="none" stroke="#2860c7" stroke-width="4"/>
+  <g fill="#f1f6fc" stroke="#c4d5e8" stroke-width="2"><circle cx="699" cy="83" r="15"/><circle cx="699" cy="217" r="15"/></g>
+  <circle cx="699" cy="150" r="15" fill="#2860c7"/>
+  <rect x="916" y="115" width="209" height="70" rx="12" fill="#dce8f9" stroke="#c4d5e8"/>
+  <path d="M937 150h26m-8-8 8 8-8 8" fill="none" stroke="#2860c7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="980" y="158" fill="#15273d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="600">YOUR WALLET</text>
+  <text x="916" y="221" fill="#536b84" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="1.8">QUOTE → EXECUTION</text>
+</svg>
